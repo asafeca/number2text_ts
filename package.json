@@ -1,0 +1,39 @@
+{
+  "name": "numbe_to_text",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000C\u0000o\u0000n\u0000v\u0000e\u0000r\u0000t\u0000 \u0000a\u0000n\u0000y\u0000 \u0000n\u0000u\u0000m\u0000b\u0000e\u0000r\u0000 \u0000t\u0000o\u0000 \u0000t\u0000e\u0000x\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"lib/**/*.js\" \"lib/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderAware/number2text_ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderAware/number2text_ts/issues"
+  },
+  "homepage": "https://github.com/CoderAware/number2text_ts#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.5"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
